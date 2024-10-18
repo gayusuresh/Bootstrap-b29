@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flexbox
+        {
+            background-color: hsl(26, 60%, 35%);
+            width:500px;
+            height:500px;
+            display: flex;
+            justify-content: start;
+             align-items: start;
+           /* flex-direction: row-reverse;*/
+            flex-wrap: wrap;/*same line display the data*/
+
+            
+           
+
+        }
+        #one
+        {
+            background-color: hsl(320, 82%, 38%);
+            width:45px;
+            height:45px;
+            margin:20px;
+            padding:20px;
+
+
+
+        }
+        #two
+        {
+            background-color: hsl(322, 3%, 51%);
+            width:95px;
+            height:75px;
+            margin:20px;
+            padding:20px;
+
+
+
+        }
+        div:nth-child(6)
+        {
+            align-self: flex-end;
+        }
+        div:nth-child(12)
+        {
+           flex-grow:1;
+        }
+        div:nth-child(8)
+        {
+           flex-shrink: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="flexbox">
+        <div id="one">1</div>
+        <div id="one">2</div>
+        <div id="one">3</div>
+        <div id="one">4</div>
+        <div id="one">5</div>
+        <div id="one">6</div>
+        <div id="one">7</div>
+        <div id="one">8</div>
+        <div id="one">9</div>
+        <div id="one">10</div>
+        <div id="one">11</div>
+        <div id="one">12</div>
+        <div id="one">13</div>
+        <div id="one">14</div>
+
+        <div id="one">15</div>
+    </div>
+</body>
+</html>
